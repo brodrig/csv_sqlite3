@@ -5,6 +5,10 @@ CSV_FILE = "New_York_City_Population_By_Community_Districts.csv"
 MAIN = "__main__"
 RU = "rU"
 ERROR = "Error: {}\n"
+KEY_ERROR = "Key Error: {}\n"
+SQLITE3_ERROR = "Sqlite3 Error: {}\n"
+SQLITE3_OPERATIONAL_ERROR = "Sqlite3 Operational Error: {}\n"
+IO_ERROR = "IO Error: {}\n"
 
 # database strings
 DATABASE = "nyc_population.db"
@@ -28,6 +32,6 @@ CREATE_TABLE = '''CREATE TABLE ''' + CD_TABLE_NAME + '''
                         population2010 INT
                         )'''
 
-INSERT = "INSERT INTO {} ({}) VALUES {}"
+INSERT = "INSERT INTO {} ({}) VALUES {};"
 
 SELECT_ALL = "SELECT * FROM " + CD_TABLE_NAME
